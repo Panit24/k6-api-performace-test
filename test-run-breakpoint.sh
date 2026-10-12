@@ -20,7 +20,7 @@ set -u
 if [ $# -gt 0 ]; then
   RATES=("$@")
 else
-  RATES=(50 150 200 300)
+  RATES=(10 50 150 200 300)
 fi
  
 DURATION="${DURATION:-60s}"
