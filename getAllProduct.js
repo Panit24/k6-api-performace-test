@@ -23,10 +23,10 @@ export const options = {
       executor: 'constant-arrival-rate',
       rate: rps,
       timeUnit: '1s',
-      duration: __ENV.DURATION || '3m',
+      duration: __ENV.DURATION || '1m',
       preAllocatedVUs: vus,
       maxVUs: maxVus,          // lets k6 add VUs if responses slow down
-      gracefulStop: '15s',
+      // gracefulStop: '15s',
     },
   },
 
